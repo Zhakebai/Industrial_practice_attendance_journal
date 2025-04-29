@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-primary: #4E73DF;
+  --color-primary-hover: #2E59D9;
+  --color-bg: #F4F6FC;
+  --color-card: #FFFFFF;
+  --color-text: #2C3E50;
+  --color-muted: #6C757D;
+  --color-border: #E3E6F0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1.5rem;
+}
+
+.subheader {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
+.card {
+  background-color: var(--color-card);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-outline-secondary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-outline-secondary:hover {
+  background-color: rgba(78,115,223,0.1);
+}
+
+.form-control,
+.form-select {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(78,115,223,0.25);
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+}
+
+.table thead th {
+  background-color: var(--color-card);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 2px solid var(--color-border);
+  padding: 0.75rem;
+}
+
+.table tbody tr {
+  background-color: var(--color-card);
+  transition: background-color 0.2s;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(78,115,223,0.05);
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+  padding: 0.75rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Fade‑in animation */
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
