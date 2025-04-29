@@ -42,14 +42,7 @@ This project provides a web interface allowing teachers to mark student attendan
    npm install
    ```
 3. Create a `.env` file based on `.env.example` and fill in the variables.
-4. Seed the database:
-   ```bash
-   node src/seedSubjects.js
-   node src/assignGroupSubjects.js
-   node src/assignTeacherGroups.js
-   node src/seedStudents.js
-   ```
-5. Start the server:
+4. Start the server:
    ```bash
    npm run dev
    ```
@@ -75,18 +68,17 @@ This project provides a web interface allowing teachers to mark student attendan
 
 ## Screenshots
 <!-- Add screenshots in the `screenshots/` directory -->
-1. **Teacher Dashboard**
-   ![Teacher Dashboard](screenshots/teacher_dashboard.png)
-2. **Mark Attendance**
-   ![Mark Attendance](screenshots/mark_attendance.png)
-3. **Student View**
-   ![Student View](screenshots/student_view.png)
-4. **Attendance History**
-   ![Attendance History](screenshots/attendance_history.png)
+1.  **Login Page**
+   ![image](https://github.com/user-attachments/assets/d1d552e6-6cf5-4f45-a406-7d8fc3dea44a)
+2.    **Teacher Dashboard**
+   ![image](https://github.com/user-attachments/assets/38f78975-6f12-484a-bbd4-9fd530c0a857)
+3. **Mark Attendance**
+   ![image](https://github.com/user-attachments/assets/9b67b6d8-7de4-4fce-a5b4-2bd578bfcd85)
+4. **Student View**
+   ![image](https://github.com/user-attachments/assets/8a5a6432-5cf4-49af-8471-b8f33d1bf705)
 
-## Contributing
-Contributions are welcome! Please open issues or submit pull requests.
+5. **Attendance History**
+   ![image](https://github.com/user-attachments/assets/9f1cf6cb-4ae1-40f2-b072-06b9b574984a)
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
