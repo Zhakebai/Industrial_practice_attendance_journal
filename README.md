@@ -1,4 +1,3 @@
-# Industrial_practice_attendance_journal
 # Attendance Journal Web Application
 
 A full-stack web application for managing student attendance with preventive analytics and notifications.
